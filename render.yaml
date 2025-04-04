@@ -4,7 +4,7 @@ services:
     env: node
     plan: free  # or 'starter', 'pro' depending on your needs
     buildCommand: cd src/backend && npm install
-    startCommand: cd src/backend && npm start
+    startCommand: cd src/backend && npm run dev
     autoDeploy: true
     envVars:
       - key: NODE_ENV
